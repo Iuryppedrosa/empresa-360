@@ -1,9 +1,53 @@
 <template>
-  <div>Login</div>
+  <div>
+    <nav class="navbar navbar-light bg-light menu-superior">
+      <div class="container">
+        <a class="navbar-brand" href="#">Empresa 360</a>
+        <div class="navbar-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ path: '/' }"
+                >Voltar</router-link
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row mt-5">
+      <div class="col-6 offset-3">
+        <div class="card">
+          <p class="card-header">Entrar</p>
+          <div class="card-body">
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="E-mail" />
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Senha" />
+            </div>
+            <button class="btn btn-primary" @click="navegarPara">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 export default {
   name: 'LoginComponent',
   data() {},
+  methods: {
+    navegarPara() {
+      //this.$router.push('/home')
+
+      // o metodo replace() substitui a rota atual pela nova, nao permitindo o usuario voltar
+      //this.$router.replace({ path: '/home' })
+      //this.$router.forward()
+      //this.$router.back()
+
+      this.$router.go()
+    },
+  },
 }
 </script>
