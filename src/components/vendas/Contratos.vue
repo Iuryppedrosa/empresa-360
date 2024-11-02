@@ -1,10 +1,12 @@
 <template>
-  <h3>Servicos</h3>
-  <hr />
+  <div>Contratos</div>
 </template>
+
 <script>
 export default {
-  name: 'ServicosComponent',
+  name: 'ContratosComponent',
   data() {},
 }
 </script>
+
+<style></style>

@@ -1,11 +1,14 @@
 <template>
-  <h3>Vendas</h3>
+  <h3>Teste</h3>
+
   <hr />
-  <router-view></router-view>
 </template>
+
 <script>
 export default {
-  name: 'VendasComponent',
+  name: 'DashboardComponent',
   data() {},
 }
 </script>
+
+<style></style>

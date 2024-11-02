@@ -2,7 +2,9 @@
   <div>
     <nav class="navbar navbar-light bg-light menu-superior">
       <div class="container">
-        <a class="navbar-brand" href="#">Empresa 360</a>
+        <router-link class="navbar-brand" :to="'/home'"
+          >Empresa 360</router-link
+        >
         <div class="navbar-nav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -17,17 +19,33 @@
       <div class="list-group menu-esquerda">
         <router-link
           class="list-group-item list-group-item-action"
-          :to="{ path: '/home' }"
+          :to="{ path: '/home/dashboard' }"
           ><i class="bi bi-speedometer2"></i> Dashboard</router-link
         >
         <router-link
           class="list-group-item list-group-item-action"
-          :to="{ path: 'home/vendas' }"
-          ><i class="bi bi-cart"></i> Vendas</router-link
-        >
+          :to="{ path: '/home/vendas' }"
+          @click="toggleVendas"
+          ><i class="bi bi-cart"></i> Vendas
+          <div v-if="vendasAndLeads">
+            <router-link
+              class="list-group-item list-group-item-action"
+              :to="{ path: '/home/vendas/leads' }"
+              @click="stopPropagation"
+              ><i class="bi bi-caret-right"></i> Leads</router-link
+            >
+            <router-link
+              class="list-group-item list-group-item-action"
+              :to="{ path: '/home/vendas/contratos' }"
+              @click="stopPropagation"
+              ><i class="bi bi-caret-right"></i> Contratos</router-link
+            >
+          </div>
+        </router-link>
+
         <router-link
           class="list-group-item list-group-item-action"
-          :to="{ path: 'home/servicos' }"
+          :to="{ path: '/home/servicos' }"
           ><i class="bi bi-card-checklist"></i> Servicos</router-link
         >
       </div>
@@ -42,10 +60,7 @@
         </nav>
 
         <div class="container-fluid">
-          <h1 class="mt-4">Visões relacionadas ao menu</h1>
-          <p>
-            Aqui podemos apresentar as views de acordo com as opções do menu.
-          </p>
+          <router-view></router-view>
         </div>
       </div>
     </div>
@@ -54,7 +69,20 @@
 <script>
 export default {
   name: 'HomeComponent',
-  data() {},
+  data() {
+    return {
+      vendasAndLeads: false,
+    }
+  },
+  methods: {
+    toggleVendas() {
+      this.vendasAndLeads = !this.vendasAndLeads
+      console.log(this.vendasAndLeads)
+    },
+    stopPropagation(event) {
+      event.stopPropagation()
+    },
+  },
 }
 </script>
 
@@ -72,4 +100,10 @@ export default {
   border-top: none;
   border-right: none;
 }
+
+/* .router-link-exact-active {
+  background-color: #0080ff;
+  color: #fff;
+  border-color: #0080ff;
+} */
 </style>
