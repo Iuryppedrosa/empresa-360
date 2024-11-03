@@ -15,7 +15,7 @@
           <td>{{ lead.telefone }}</td>
           <td>
             <router-link
-              :to="{ path: '/home/vendas/leads' }"
+              :to="{ path: `/home/vendas/leads/${lead.id}` }"
               class="btn btn-primary"
             >
               <i class="bi bi-pencil-square" style="cursor: pointer"></i>
@@ -28,24 +28,12 @@
 </template>
 
 <script>
+import apiMixins from '@/mixins/apiMixins'
 export default {
   name: 'LeadsComponent',
-  data() {
-    return {
-      leads: [],
-    }
-  },
-  methods: {
-    getLeads() {
-      fetch('http://localhost:3000/leads')
-        .then(response => response.json())
-        .then(data => {
-          this.leads = data
-        })
-    },
-  },
+  mixins: [apiMixins],
   created() {
-    this.getLeads()
+    this.getDadosApi('http://localhost:3000/leads')
   },
 }
 </script>
