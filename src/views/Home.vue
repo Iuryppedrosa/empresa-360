@@ -45,7 +45,7 @@
 
         <router-link
           class="list-group-item list-group-item-action"
-          :to="{ path: '/home/servicos' }"
+          :to="{ name: 'RouteServicos' }"
           ><i class="bi bi-card-checklist"></i> Servicos</router-link
         >
       </div>

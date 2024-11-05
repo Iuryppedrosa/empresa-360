@@ -2,6 +2,7 @@ export default {
   data() {
     return {
       leads: {},
+      servicos: {},
     }
   },
   methods: {
@@ -10,6 +11,7 @@ export default {
         .then(response => response.json())
         .then(data => {
           this.leads = data
+          this.servicos = data
         })
     },
   },

@@ -30,6 +30,7 @@ const routes = [
           {
             path: 'leads',
             component: Leads,
+            name: 'LeadsRoute',
           },
           {
             path: 'leads/:id',
@@ -44,6 +45,7 @@ const routes = [
       {
         path: 'servicos',
         component: Servicos,
+        name: 'RouteServicos',
       },
       {
         path: 'dashboard',

@@ -27,7 +27,14 @@
       />
     </div>
   </div>
-  <div class="col-auto">
+  <div class="col-auto d-flex justify-content-between">
+    <button
+      type="button"
+      class="btn btn-warning me-4"
+      @click="$router.replace({ name: 'LeadsRoute', params: {} })"
+    >
+      Voltar
+    </button>
     <button class="btn btn-primary">Editar</button>
   </div>
 </template>
