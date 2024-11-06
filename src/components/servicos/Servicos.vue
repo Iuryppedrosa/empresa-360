@@ -2,7 +2,7 @@
   <h3>Servicos</h3>
   <hr />
   <div class="row">
-    <div class="col" v-for="servico in servicos" :key="servico.id">
+    <div class="col mb-2" v-for="servico in servicos" :key="servico.id">
       <div class="card" style="width: 11rem">
         <img
           class="card-img-top"
@@ -10,10 +10,15 @@
           alt="Card image cap"
         />
         <div class="card-body text-center">
-          <p class="card-text">{{ servico.servico }}</p>
+          <router-link
+            :to="{ name: 'ServicoDetails', params: { id: servico.id } }"
+          >
+            <p class="card-text">{{ servico.servico }}</p></router-link
+          >
         </div>
       </div>
     </div>
+    <router-view class="mt-3"></router-view>
   </div>
 </template>
 <script>

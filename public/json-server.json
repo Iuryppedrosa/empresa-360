@@ -175,152 +175,62 @@
 		{
 			"id": 1,
 			"servico": "Seguro de vida",
-			"icone": "seguro_vida.png"
+			"icone": "seguro_vida.png",
+			"detalhes": "Proporciona segurança financeira para sua família em caso de imprevistos."
 		},
 		{
 			"id": 2,
 			"servico": "Seguro residencial",
-			"icone": "seguro_residencial.png"
+			"icone": "seguro_residencial.png",
+			"detalhes": "Protege seu lar contra danos e imprevistos como incêndio e roubo."
 		},
 		{
 			"id": 3,
 			"servico": "Seguro auto",
-			"icone": "seguro_auto.png"
+			"icone": "seguro_auto.png",
+			"detalhes": "Oferece cobertura para danos ao seu veículo e terceiros."
 		},
 		{
 			"id": 4,
 			"servico": "Plano de saúde",
-			"icone": "seguro_vida.png"
+			"icone": "seguro_vida.png",
+			"detalhes": "Cuida de sua saúde com acesso a consultas e tratamentos médicos."
 		},
 		{
 			"id": 5,
 			"servico": "Assistência 24h",
-			"icone": "seguro_residencial.png"
+			"icone": "seguro_residencial.png",
+			"detalhes": "Suporte emergencial para diversas necessidades, como guincho e chaveiro."
 		},
 		{
 			"id": 6,
 			"servico": "Proteção de dados",
-			"icone": "seguro_auto.png"
+			"icone": "seguro_auto.png",
+			"detalhes": "Garante a segurança de informações pessoais e contra ataques cibernéticos."
 		},
 		{
 			"id": 7,
 			"servico": "Seguro viagem",
-			"icone": "seguro_vida.png"
+			"icone": "seguro_vida.png",
+			"detalhes": "Cobertura para emergências durante suas viagens nacionais e internacionais."
 		},
 		{
 			"id": 8,
 			"servico": "Seguros empresariais",
-			"icone": "seguro_residencial.png"
+			"icone": "seguro_residencial.png",
+			"detalhes": "Proteção abrangente para o seu negócio contra vários riscos."
 		},
 		{
 			"id": 9,
 			"servico": "Seguro saúde dental",
-			"icone": "seguro_auto.png"
+			"icone": "seguro_auto.png",
+			"detalhes": "Planos odontológicos que oferecem cobertura para tratamentos dentários."
 		},
 		{
 			"id": 10,
 			"servico": "Seguro de responsabilidade civil",
-			"icone": "seguro_vida.png"
-		},
-		{
-			"id": 11,
-			"servico": "Seguro de acidentes pessoais",
-			"icone": "seguro_residencial.png"
-		},
-		{
-			"id": 12,
-			"servico": "Seguro de vida em grupo",
-			"icone": "seguro_auto.png"
-		},
-		{
-			"id": 13,
-			"servico": "Seguro de automóveis para frota",
-			"icone": "seguro_vida.png"
-		},
-		{
-			"id": 14,
-			"servico": "Seguros de propriedade comercial",
-			"icone": "seguro_residencial.png"
-		},
-		{
-			"id": 15,
-			"servico": "Seguro de carga",
-			"icone": "seguro_auto.png"
-		},
-		{
-			"id": 16,
-			"servico": "Seguro de transporte",
-			"icone": "seguro_vida.png"
-		},
-		{
-			"id": 17,
-			"servico": "Seguro de renda",
-			"icone": "seguro_residencial.png"
-		},
-		{
-			"id": 18,
-			"servico": "Seguro de doenças críticas",
-			"icone": "seguro_auto.png"
-		},
-		{
-			"id": 19,
-			"servico": "Seguro de imóveis alugados",
-			"icone": "seguro_vida.png"
-		},
-		{
-			"id": 20,
-			"servico": "Seguro de equipamentos eletrônicos",
-			"icone": "seguro_residencial.png"
-		},
-		{
-			"id": 21,
-			"servico": "Seguro contra incêndio",
-			"icone": "seguro_auto.png"
-		},
-		{
-			"id": 22,
-			"servico": "Seguro de responsabilidade profissional",
-			"icone": "seguro_vida.png"
-		},
-		{
-			"id": 23,
-			"servico": "Seguro de vida para aposentados",
-			"icone": "seguro_residencial.png"
-		},
-		{
-			"id": 24,
-			"servico": "Seguro para veículos de passeio",
-			"icone": "seguro_auto.png"
-		},
-		{
-			"id": 25,
-			"servico": "Seguro para motocicletas",
-			"icone": "seguro_vida.png"
-		},
-		{
-			"id": 26,
-			"servico": "Seguro de residência para inquilinos",
-			"icone": "seguro_residencial.png"
-		},
-		{
-			"id": 27,
-			"servico": "Seguro de responsabilidade civil profissional",
-			"icone": "seguro_auto.png"
-		},
-		{
-			"id": 28,
-			"servico": "Seguro para casas de veraneio",
-			"icone": "seguro_vida.png"
-		},
-		{
-			"id": 29,
-			"servico": "Seguro para coletivos",
-			"icone": "seguro_residencial.png"
-		},
-		{
-			"id": 30,
-			"servico": "Seguro para eventos",
-			"icone": "seguro_auto.png"
+			"icone": "seguro_vida.png",
+			"detalhes": "Proteção contra danos causados a terceiros, cobrindo custos de indenização."
 		}
 	]
 }
