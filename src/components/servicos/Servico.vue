@@ -15,12 +15,21 @@ export default {
   created() {
     this.getDadosApi(`http://localhost:3000/servicos/${this.$route.params.id}`)
   },
+
+  /*beforeRouteUpdate(to, from, next) {
+    // to = rota que está indo
+    // from = rota que está saindo
+    // next = função que chama a próxima rota
+    this.getDadosApi(`http://localhost:3000/servicos/${to.params.id}`)
+    next()
+  },*/
   watch: {
     $route(to) {
-      this.getDadosApi(`http://localhost:3000/servicos/${to.params.id}`)
+      if (to.params.id != undefined) {
+        this.getDadosApi(`http://localhost:3000/servicos/${to.params.id}`)
+      }
     },
   },
 }
 </script>
-
 <style></style>

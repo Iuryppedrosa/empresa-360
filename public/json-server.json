@@ -176,61 +176,114 @@
 			"id": 1,
 			"servico": "Seguro de vida",
 			"icone": "seguro_vida.png",
-			"detalhes": "Proporciona segurança financeira para sua família em caso de imprevistos."
+			"detalhes": "Proporciona segurança financeira para sua família em caso de imprevistos.",
+			"indicadores": "Alta procura e estabilidade",
+			"opcoes": [
+				"Cobertura básica",
+				"Cobertura avançada",
+				"Cobertura premium"
+			]
 		},
 		{
 			"id": 2,
 			"servico": "Seguro residencial",
 			"icone": "seguro_residencial.png",
-			"detalhes": "Protege seu lar contra danos e imprevistos como incêndio e roubo."
+			"detalhes": "Protege seu lar contra danos e imprevistos como incêndio e roubo.",
+			"indicadores": "Baixa sinistralidade, alta satisfação",
+			"opcoes": [
+				"Cobertura contra roubo",
+				"Cobertura contra incêndio",
+				"Cobertura contra desastres naturais"
+			]
 		},
 		{
 			"id": 3,
 			"servico": "Seguro auto",
 			"icone": "seguro_auto.png",
-			"detalhes": "Oferece cobertura para danos ao seu veículo e terceiros."
+			"detalhes": "Oferece cobertura para danos ao seu veículo e terceiros.",
+			"indicadores": "Cobertura abrangente, alto custo-benefício",
+			"opcoes": [
+				"Cobertura total",
+				"Cobertura parcial",
+				"Cobertura para terceiros"
+			]
 		},
 		{
 			"id": 4,
 			"servico": "Plano de saúde",
 			"icone": "seguro_vida.png",
-			"detalhes": "Cuida de sua saúde com acesso a consultas e tratamentos médicos."
+			"detalhes": "Cuida de sua saúde com acesso a consultas e tratamentos médicos.",
+			"indicadores": "Alta cobertura médica",
+			"opcoes": [
+				"Planos regionais",
+				"Planos nacionais"
+			]
 		},
 		{
 			"id": 5,
 			"servico": "Assistência 24h",
 			"icone": "seguro_residencial.png",
-			"detalhes": "Suporte emergencial para diversas necessidades, como guincho e chaveiro."
+			"detalhes": "Suporte emergencial para diversas necessidades, como guincho e chaveiro.",
+			"indicadores": "Serviço essencial, rápido atendimento",
+			"opcoes": [
+				"Assistência automotiva",
+				"Assistência residencial"
+			]
 		},
 		{
 			"id": 6,
 			"servico": "Proteção de dados",
 			"icone": "seguro_auto.png",
-			"detalhes": "Garante a segurança de informações pessoais e contra ataques cibernéticos."
+			"detalhes": "Garante a segurança de informações pessoais e contra ataques cibernéticos.",
+			"indicadores": "Alta proteção, monitoramento contínuo",
+			"opcoes": [
+				"Cobertura para dados pessoais",
+				"Cobertura para dados empresariais"
+			]
 		},
 		{
 			"id": 7,
 			"servico": "Seguro viagem",
 			"icone": "seguro_vida.png",
-			"detalhes": "Cobertura para emergências durante suas viagens nacionais e internacionais."
+			"detalhes": "Cobertura para emergências durante suas viagens nacionais e internacionais.",
+			"indicadores": "Alta aceitação no mercado",
+			"opcoes": [
+				"Cobertura para viagens nacionais",
+				"Cobertura para viagens internacionais"
+			]
 		},
 		{
 			"id": 8,
 			"servico": "Seguros empresariais",
 			"icone": "seguro_residencial.png",
-			"detalhes": "Proteção abrangente para o seu negócio contra vários riscos."
+			"detalhes": "Proteção abrangente para o seu negócio contra vários riscos.",
+			"indicadores": "Ampla cobertura de ativos",
+			"opcoes": [
+				"Coberturas flexíveis",
+				"Coberturas modulares"
+			]
 		},
 		{
 			"id": 9,
 			"servico": "Seguro saúde dental",
 			"icone": "seguro_auto.png",
-			"detalhes": "Planos odontológicos que oferecem cobertura para tratamentos dentários."
+			"detalhes": "Planos odontológicos que oferecem cobertura para tratamentos dentários.",
+			"indicadores": "Cobertura completa",
+			"opcoes": [
+				"Planos básicos",
+				"Planos avançados"
+			]
 		},
 		{
 			"id": 10,
 			"servico": "Seguro de responsabilidade civil",
 			"icone": "seguro_vida.png",
-			"detalhes": "Proteção contra danos causados a terceiros, cobrindo custos de indenização."
+			"detalhes": "Proteção contra danos causados a terceiros, cobrindo custos de indenização.",
+			"indicadores": "Cobertura abrangente",
+			"opcoes": [
+				"Planos personalizados",
+				"Planos corporativos"
+			]
 		}
 	]
 }

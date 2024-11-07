@@ -11,6 +11,8 @@ import Dashboard from '@/components/dashboard/Dashboard.vue'
 import Lead from '@/components/vendas/Lead.vue'
 import VendasPadrao from '@/components/vendas/VendasPadrao.vue'
 import Servico from '@/components/servicos/Servico.vue'
+import Opcoes from '@/components/servicos/Opcoes.vue'
+import Indicadores from '@/components/servicos/Indicadores.vue'
 
 const routes = [
   {
@@ -47,7 +49,32 @@ const routes = [
         path: 'servicos',
         component: Servicos,
         name: 'RouteServicos',
-        children: [{ path: ':id', component: Servico, name: 'ServicoDetails' }],
+        children: [
+          {
+            path: ':id',
+            name: 'ServicoDetails',
+            components: {
+              default: Servico,
+              opcoes: Opcoes,
+              indicadores: Indicadores,
+            },
+            props: {
+              default: true,
+              opcoes: true,
+              indicadores: true,
+            },
+            beforeEnter: (to, from, next) => {
+              if (
+                to.query.view === 'opcoes' ||
+                to.query.view === 'indicadores'
+              ) {
+                next()
+              } else {
+                next({ path: '/home/servicos' }) // Redireciona caso não seja 'opcoes' ou 'indicadores'
+              }
+            },
+          },
+        ],
       },
       {
         path: 'dashboard',
