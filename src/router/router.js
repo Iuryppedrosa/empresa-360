@@ -13,6 +13,8 @@ import VendasPadrao from '@/components/vendas/VendasPadrao.vue'
 import Servico from '@/components/servicos/Servico.vue'
 import Opcoes from '@/components/servicos/Opcoes.vue'
 import Indicadores from '@/components/servicos/Indicadores.vue'
+import DashboardRodape from '@/components/dashboard/DashboardRodape.vue'
+import NotFound from '../components/notfound/NotFound.vue'
 
 const routes = [
   {
@@ -63,22 +65,15 @@ const routes = [
               opcoes: true,
               indicadores: true,
             },
-            beforeEnter: (to, from, next) => {
-              if (
-                to.query.view === 'opcoes' ||
-                to.query.view === 'indicadores'
-              ) {
-                next()
-              } else {
-                next({ path: '/home/servicos' }) // Redireciona caso não seja 'opcoes' ou 'indicadores'
-              }
-            },
           },
         ],
       },
       {
         path: 'dashboard',
-        component: Dashboard,
+        components: {
+          default: Dashboard,
+          rodape: DashboardRodape,
+        },
       },
     ],
   },
@@ -86,6 +81,10 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login,
+  },
+  {
+    path: '/:catchAll(.*)*',
+    component: NotFound,
   },
 ]
 

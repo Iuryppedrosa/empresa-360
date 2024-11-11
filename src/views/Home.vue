@@ -64,6 +64,9 @@
         </div>
       </div>
     </div>
+    <div class="rodape">
+      <router-view name="rodape"> </router-view>
+    </div>
   </div>
 </template>
 <script>
@@ -106,4 +109,20 @@ export default {
   color: #fff;
   border-color: #0080ff;
 } */
+
+.rodape {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+  border-top: solid 1px #ccc;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1000;
+}
 </style>
